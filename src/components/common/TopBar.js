@@ -11,33 +11,35 @@ import {
 
 const TopBar = () => {
   return (
-    <Container className="topbar">
-      <Row>
-        <Col>
-          <FiPhoneCall size={16} /> CALL US +1 235 98 95
-        </Col>
-        <Col>
-          <ul>
-            <li>
-              <FiYoutube />
-            </li>
-            <li>
-              <FiTwitter />
-            </li>
-            <li>
-              <FiFacebook />
-            </li>
-            <li>
-              <FiInstagram />
-            </li>
-            <Button>
-              <FiUser />
-              Login
-            </Button>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <div className="topbar">
+      <Container>
+        <Row>
+          <Col>
+            <FiPhoneCall size={16} /> CALL US +1 235 98 95
+          </Col>
+          <Col>
+            <ul>
+              <li>
+                <FiYoutube />
+              </li>
+              <li>
+                <FiTwitter />
+              </li>
+              <li>
+                <FiFacebook />
+              </li>
+              <li>
+                <FiInstagram />
+              </li>
+              <Button size="sm">
+                <FiUser />
+                Login
+              </Button>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 
