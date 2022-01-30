@@ -14,27 +14,30 @@ const TopBar = () => {
     <div className="topbar">
       <Container>
         <Row>
-          <Col>
-            <FiPhoneCall size={16} /> CALL US +1 235 98 95
+          <Col xs={7}>
+            <FiPhoneCall size={16} />
+            <span className="d-none d-md-inline">CALL US </span> +1 235 98 95
           </Col>
-          <Col>
+          <Col xs={5}>
             <ul>
               <li>
-                <FiYoutube />
+                <FiYoutube className="d-none d-md-block" />
               </li>
               <li>
-                <FiTwitter />
+                <FiTwitter className="d-none d-md-block" />
               </li>
               <li>
-                <FiFacebook />
+                <FiFacebook className="d-none d-md-block" />
               </li>
               <li>
-                <FiInstagram />
+                <FiInstagram className="d-none d-md-block" />
               </li>
-              <Button size="sm">
-                <FiUser />
-                Login
-              </Button>
+              <li>
+                <Button size="sm">
+                  <FiUser />
+                  Login
+                </Button>
+              </li>
             </ul>
           </Col>
         </Row>
