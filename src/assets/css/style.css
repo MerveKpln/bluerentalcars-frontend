@@ -5,6 +5,7 @@
   --color2: #4a80ee;
   --color3: #003297;
   --color4: #cecece;
+  --color5: #363636;
   --color1-transparent-15: rgba(0, 76, 229, 0.15);
 }
 
@@ -21,6 +22,28 @@ body {
 .btn-primary:hover {
   background-color: var(--color4);
   border-color: var(--color4);
+}
+
+/***************** Section Title  *****************/
+
+.section-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+}
+.section-title h2 {
+  font-weight: 900;
+  color: var(--color5);
+}
+
+.section-title span {
+  display: inline-block;
+  width: 10rem;
+  height: 0.3rem;
+  background-color: var(--color1);
 }
 
 /***************** TOP BAR  *****************/
@@ -42,6 +65,16 @@ body {
 }
 
 /***************** MENU BAR  *****************/
+.menu .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 450px) {
+  .menu .navbar-nav {
+    flex-direction: column;
+  }
+}
 
 .menubar .navbar-nav a.active {
   border-bottom: 0.3rem solid var(--color1);
@@ -60,6 +93,7 @@ body {
   left: 0;
   text-align: left;
 }
+
 .slider .carousel-control-next,
 .slider .carousel-control-prev {
   top: auto;
@@ -69,4 +103,35 @@ body {
 .slider .carousel-control-prev {
   left: auto;
   right: 50px;
+}
+
+.slider form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.2rem;
+}
+
+.slider .input-group-text {
+  font-size: 0.8rem;
+}
+
+.slider .row {
+  align-items: center; /* Ana ekrandaki formu mavi ekrana dikeyde ortalamış olduk...*/
+}
+
+/***************** CUSTOMER SERVICE CARD  *****************/
+
+.customer-service-card .icon {
+  color: var(--color2);
+  font-size: 4rem;
+}
+
+.customer-service-card .row {
+  align-items: center;
+  text-align: center;
+}
+
+/***************** VEHICLE LIST  *****************/
+
+.vehicleList {
 }

@@ -9,7 +9,7 @@ import {
 } from "react-icons/ri";
 const MenuBar = () => {
   return (
-    <Navbar expand="lg" className="menubar">
+    <Navbar expand="md" className="menubar">
       <Container>
         <Navbar.Brand href="#home">
           <Image src={logo} />
